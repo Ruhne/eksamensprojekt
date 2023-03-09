@@ -20,12 +20,12 @@ class Knap {
       fill(200);
       rect(knapX, knapY, knapB, knapH);
       fill(255);
-      text("tryk !", knapX+10, knapY+30);
+      text("Cam 1", knapX+10, knapY+30);
     } else {
       fill(100);
       rect(knapX, knapY, knapB, knapH);
       fill(200);
-      text("tryk !", knapX+10, knapY+30);
+      text("Cam 1", knapX+10, knapY+30);
     }
   }
 
