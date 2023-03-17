@@ -27,7 +27,7 @@ void draw() {
     
   k1.tegn();
   
-   text("alle kamera", width/2, height/2);
+   text("alle kameraer", width/2, height/2);
   }
   if (visning == 1) {
     text("1", width/2, height/2);
