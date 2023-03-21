@@ -7,10 +7,10 @@ int visning = 0;
 
 void setup() {
   size(500, 600);
-  k1 = new Knap(100, 100);
-  k2 = new Knap(300, 100);
-  k3 = new Knap(100, 200);
-  k4 = new Knap(300, 200);
+  k1 = new Knap(100, 100,"Cam 1");
+  k2 = new Knap(300, 100,"Cam 2");
+  k3 = new Knap(100, 200,"Cam 3");
+  k4 = new Knap(300, 200,"Cam 4");
   background(75);
  textSize(30);
  

@@ -2,13 +2,15 @@ class Knap {
 
   int      knapX=10, knapY=30, knapB=120, knapH = 40;
   boolean  knapOn = false;
-
+  String   navn = "Cam 1";
+  
   //IKKE DEL AF KNAP
   int      counter = 0;
 
-  Knap(int x, int y) {
+  Knap(int x, int y, String n) {
     knapX = x;
     knapY = y;
+    navn = n;
   }
 
 
@@ -20,12 +22,12 @@ class Knap {
       fill(200);
       rect(knapX, knapY, knapB, knapH);
       fill(255);
-      text("Cam 1", knapX+10, knapY+30);
+      text(navn, knapX+10, knapY+30);
     } else {
       fill(100);
       rect(knapX, knapY, knapB, knapH);
       fill(200);
-      text("Cam 1", knapX+10, knapY+30);
+      text(navn, knapX+10, knapY+30);
     }
   }
 
