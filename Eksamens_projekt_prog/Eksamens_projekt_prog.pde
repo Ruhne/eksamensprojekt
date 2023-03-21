@@ -26,6 +26,9 @@ void draw() {
   if(visning==0) {
     
   k1.tegn();
+  k2.tegn();
+  k3.tegn();
+  k4.tegn();
   
    text("alle kameraer", width/2, height/2);
    
@@ -41,32 +44,27 @@ void draw() {
   if (visning == 3) {
     text("3", width/2, height/2);
   }
-  k2.tegn();
-  k3.tegn();
-  k4.tegn();
+  if (visning == 4) {
+    text ("4", width/2, height/2);
+  }
+  
+  if(k1.knapOn) visning=1;
+  if(k2.knapOn) visning=2;
+  if(k3.knapOn) visning=3;
+  if(k4.knapOn) visning=4;
 }
 
 void mousePressed(){
   k1.knapKlik();
-  if (key== '1') visning = 1;
-  
   k2.knapKlik();
-  if (key== '2') visning = 2;
-  
   k3.knapKlik();
-  if (key== '3') visning = 3;
   k4.knapKlik();
-  if (key== '4') visning = 4;
 
 }
 
 void mouseReleased(){
   k1.knapReleased();
-  if (key=='1') visning =1;
   k2.knapReleased();
-  if (key=='2') visning = 2;
   k3.knapReleased();
-  if (key=='3') visning = 3;
   k4.knapReleased();
-  if (key== '4') visning = 4;
 }
