@@ -38,7 +38,7 @@ void draw() {
   if (visning == 3) {
     text("3", width/2, height/2);
   }
-}
+
   
   
   k2.tegn();
