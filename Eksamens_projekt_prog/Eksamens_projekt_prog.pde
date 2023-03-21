@@ -13,8 +13,8 @@ void setup() {
   k4 = new Knap(300, 200);
   background(75);
  textSize(30);
- fill(0, 408, 612, 816);
- text("HomeSaFe", 175, 40);
+ 
+ 
  
  
   
@@ -28,6 +28,9 @@ void draw() {
   k1.tegn();
   
    text("alle kameraer", width/2, height/2);
+   
+   fill(0, 408, 612, 816);
+  text("HomeSaFe", 175, 40);
   }
   if (visning == 1) {
     text("1", width/2, height/2);

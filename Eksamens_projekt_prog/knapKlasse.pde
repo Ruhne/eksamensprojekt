@@ -33,6 +33,7 @@ class Knap {
     //DEL AF KNAP - registrer klik
     if (mouseX>knapX && mouseX<(knapX+knapB) && mouseY>knapY && mouseY<(knapY+knapH)) {
       knapOn = true;
+      
     }
   }
 
@@ -40,4 +41,4 @@ class Knap {
     //EN DEL AF KNAP - sluk knappen når der gives slip
     knapOn = false;
   }
-}
+    }

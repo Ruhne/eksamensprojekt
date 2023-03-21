@@ -1,0 +1,64 @@
+Knap k1;
+Knap k2;
+Knap k3;
+Knap k4;
+Vindue vindue1, vindue2, vindue3, vindue4;
+
+
+void setup() {
+  size(500, 500);
+  k1 = new Knap(100, 100);
+  k2 = new Knap(300, 100);
+  k3 = new Knap(100, 200);
+  k4 = new Knap(300, 200);
+  background(75);
+ textSize(30);
+ fill(0, 408, 612, 816);
+ text("HomeSaFe", 175, 40);
+ 
+ //vindue objekter 
+ vindue1 = new Vindue(50, 50, 200, 200, "Vindue 1");
+  vindue2 = new Vindue(250, 50, 200, 200, "Vindue 2");
+  vindue3 = new Vindue(50, 250, 200, 200, "Vindue 3");
+  vindue4 = new Vindue(250, 250, 200, 200, "Vindue 4");
+  
+}
+ 
+ 
+ 
+  
+{
+
+
+void draw() {  
+  k1.tegn();  
+  k2.tegn();
+  k3.tegn();
+  k4.tegn();
+}
+
+void mousePressed(){
+  // åbn vindue når der trykkes på knap
+  if (k1.knapKlik()) {
+    vindue1.åben();
+  }
+  if (k2.knapKlik()) {
+    vindue2.åben();
+  }
+  if (k3.knapKlik()) {
+    vindue3.åben();
+  }
+  if (k4.knapKlik()) {
+    vindue4.åben();
+  }
+}
+  
+
+}
+
+void mouseReleased(){
+  k1.knapReleased();
+  k2.knapReleased();
+  k3.knapReleased();
+  k4.knapReleased();
+}
