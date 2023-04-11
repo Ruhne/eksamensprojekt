@@ -30,6 +30,7 @@ void setup() {
 
 void draw() {
   clear();
+  println(visning);
   if(visning==0) {
 
     
@@ -59,7 +60,6 @@ void draw() {
     text ("4", width/2, height/2);
     
   }
-  if(Tilbage.knapOn) visning = visning-1;
   if(k1.knapOn) visning=1;
   if(k2.knapOn) visning=2;
   if(k3.knapOn) visning=3;
@@ -70,11 +70,13 @@ void draw() {
 }
 
 void mousePressed(){
+
   k1.knapKlik();
   k2.knapKlik();
   k3.knapKlik();
   k4.knapKlik();
   Tilbage.knapKlik();
+    if(Tilbage.knapOn) visning = visning-1;
 
 }
 
