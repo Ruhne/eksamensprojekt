@@ -2,17 +2,21 @@ Knap k1;
 Knap k2;
 Knap k3;
 Knap k4;
-TilbageKnap tilbageKnap;
+Knap Tilbage;
 int visning = 0;
+
+
+PImage back;
 
 
 void setup() {
   size(500, 600);
+  back = loadImage("back.png");
   k1 = new Knap(100, 100,"Cam 1");
   k2 = new Knap(300, 100,"Cam 2");
   k3 = new Knap(100, 200,"Cam 3");
   k4 = new Knap(300, 200,"Cam 4");
-  TilbageKnap = new Knap(10, 10, "Tilbage");
+  Tilbage = new TilbageKnap(10,10, "Tilbage");
 
   background(75);
  textSize(30);
@@ -55,13 +59,13 @@ void draw() {
     text ("4", width/2, height/2);
     
   }
-  if(TilbageKnap.knapOn) visning = visning-1;
+  if(Tilbage.knapOn) visning = visning-1;
   if(k1.knapOn) visning=1;
   if(k2.knapOn) visning=2;
   if(k3.knapOn) visning=3;
   if(k4.knapOn) visning=4;
   
-  TilbageKnap.tegn(); 
+  Tilbage.tegn(); 
 
 }
 
@@ -70,7 +74,7 @@ void mousePressed(){
   k2.knapKlik();
   k3.knapKlik();
   k4.knapKlik();
-  TilbageKnap.knapKlik();
+  Tilbage.knapKlik();
 
 }
 
@@ -79,6 +83,6 @@ void mouseReleased(){
   k2.knapReleased();
   k3.knapReleased();
   k4.knapReleased();
-  TilbageKnap.knapReleased();
+  Tilbage.knapReleased();
 
 }
