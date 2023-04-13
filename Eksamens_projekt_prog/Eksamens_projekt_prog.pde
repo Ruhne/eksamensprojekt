@@ -19,7 +19,7 @@ PImage back;
 
 
 void setup() {
-  size(500, 600);
+  size(960, 540);
   back = loadImage("back.png");
   k1 = new Knap(100, 100, "Cam 1");
   k2 = new Knap(300, 100, "Cam 2");
@@ -60,22 +60,22 @@ void draw() {
   }
 if (visning == 1) {
   text("1", width/2, height/2);
-    image(myMovie1, 0, 40);
+    image(myMovie1, 0, 0, 960, 540);
 
 }
 if (visning == 2) {
   text("2", width/2, height/2);
-      image(myMovie2, 0, 40);
+      image(myMovie2, 0, 0, 960, 540);
 
 }
 if (visning == 3) {
   text("3", width/2, height/2);
-      image(myMovie3, 0, 40);
+      image(myMovie3, 0, 0, 960, 540);
 
 }
 if (visning == 4) {
   text ("4", width/2, height/2);
-      image(myMovie4, 0, 40);
+      image(myMovie4, 0, 0, 960, 540);
 
 }
 if (k1.knapOn) visning=1;
