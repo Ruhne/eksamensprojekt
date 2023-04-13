@@ -4,10 +4,10 @@ Movie myMovie;
 
 void setup() {
   size(200, 200);
-  myMovie = new Movie(this, "Kamera 1.mp4");
-  myMovie = new Movie(this, "Kamera 2.mp4");
-  myMovie = new Movie(this, "Kamera 3.mp4");
-  myMovie = new Movie(this, "Kamera 4.mp4");
+  myMovie = new Movie(this, "Kamera 1.mov");
+  myMovie = new Movie(this, "Kamera 2.mov");
+  myMovie = new Movie(this, "Kamera 3.mov");
+  myMovie = new Movie(this, "Kamera 4.mov");
   myMovie.loop();
 }
 

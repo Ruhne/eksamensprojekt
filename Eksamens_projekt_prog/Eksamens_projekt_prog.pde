@@ -5,6 +5,9 @@ Knap k4;
 Knap Tilbage;
 int visning = 0;
 
+import processing.video.*;
+Movie myMovie;
+
 
 PImage back;
 
@@ -17,9 +20,17 @@ void setup() {
   k3 = new Knap(100, 200,"Cam 3");
   k4 = new Knap(300, 200,"Cam 4");
   Tilbage = new TilbageKnap(10,10, "Tilbage");
+size(200, 200);
+  myMovie = new Movie(this, "Kamera 1.mov");
+  myMovie = new Movie(this, "Kamera 2.mov");
+  myMovie = new Movie(this, "Kamera 3.mov");
+  myMovie = new Movie(this, "Kamera 4.mov");
+  myMovie.loop();
+{
 
   background(75);
- textSize(30);
+ textSize(30);}
+
  
  
  
@@ -31,7 +42,11 @@ void setup() {
 void draw() {
   clear();
   println(visning);
-  if(visning==0) {
+  if(visning==0)
+  tint(255, 20);
+  image(myMovie, mouseX, mouseY);
+}
+  {
 
     
   k1.tegn();
@@ -87,4 +102,8 @@ void mouseReleased(){
   k4.knapReleased();
   Tilbage.knapReleased();
 
+}
+
+void movieEvent(Movie m) {
+  m.read();
 }
