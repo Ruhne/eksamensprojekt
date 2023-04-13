@@ -1,6 +1,6 @@
 class Knap {
 
-  int      knapX=10, knapY=30, knapB=120, knapH = 40;
+  int      knapX=10, knapY=30, knapB=90, knapH = 40;
   boolean  knapOn = false;
   String   navn = "Cam 1";
   
