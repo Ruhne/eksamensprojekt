@@ -31,7 +31,7 @@ void setup() {
   myMovie2 = new Movie(this, "Kamera 2.mp4");
   myMovie3 = new Movie(this, "Kamera 3.mp4");
   myMovie4 = new Movie(this, "Kamera 4.mp4");
-  myMovie1.loop();myMovie2.loop();myMovie3.loop();myMovie4.loop();
+  myMovie1.loop(); myMovie2.loop();myMovie3.loop();myMovie4.loop();
 
 
   background(75);
@@ -62,6 +62,7 @@ void draw() {
 if (visning == 1) {
   text("1", width/2, height/2);
     image(myMovie1, 0, 40, 960, 450);
+    
 
 }
 if (visning == 2) {
