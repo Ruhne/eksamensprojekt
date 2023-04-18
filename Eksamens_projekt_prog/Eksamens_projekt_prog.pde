@@ -57,7 +57,7 @@ void draw() {
   text("ALLE KAMERAER", 380, 300, width/1, height/1);
 
   fill(0, 408, 612, 816);
-  text("HomeSaFe", 400, 40);
+  text("HomeSaFe", 420, 40);
   }
 if (visning == 1) {
   text("1", width/2, height/2);
