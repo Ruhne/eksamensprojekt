@@ -17,7 +17,7 @@ class Knap {
   void tegn() {
 
     //DEL AF KNAPPEN - tegning af knap
-    textSize(30);
+    textSize(25);
     if (knapOn) {
       fill(200);
       rect(knapX, knapY, knapB, knapH);

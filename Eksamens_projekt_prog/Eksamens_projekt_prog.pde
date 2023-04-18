@@ -21,10 +21,10 @@ PImage back;
 void setup() {
   size(960, 540);
   back = loadImage("back.png");
-  k1 = new Knap(100, 100, "Cam 1");
-  k2 = new Knap(300, 100, "Cam 2");
-  k3 = new Knap(100, 200, "Cam 3");
-  k4 = new Knap(300, 200, "Cam 4");
+  k1 = new Knap(350, 100, "Cam 1");
+  k2 = new Knap(500, 100, "Cam 2");
+  k3 = new Knap(350, 200, "Cam 3");
+  k4 = new Knap(500, 200, "Cam 4");
   Tilbage = new TilbageKnap(10, 10, "Tilbage");
  // size(200, 200);
   myMovie1 = new Movie(this, "Kamera 1.mp4");
@@ -36,6 +36,7 @@ void setup() {
 
   background(75);
   textSize(30);
+  
 }
 
 
@@ -53,29 +54,29 @@ void draw() {
   k3.tegn();
   k4.tegn();
 
-  text("alle kameraer", width/2, height/2);
+  text("ALLE KAMERAER", 380, 300, width/1, height/1);
 
   fill(0, 408, 612, 816);
-  text("HomeSaFe", 175, 40);
+  text("HomeSaFe", 400, 40);
   }
 if (visning == 1) {
   text("1", width/2, height/2);
-    image(myMovie1, 0, 0, 960, 540);
+    image(myMovie1, 0, 40, 960, 450);
 
 }
 if (visning == 2) {
   text("2", width/2, height/2);
-      image(myMovie2, 0, 0, 960, 540);
+      image(myMovie2, 0, 40, 960, 450);
 
 }
 if (visning == 3) {
   text("3", width/2, height/2);
-      image(myMovie3, 0, 0, 960, 540);
+      image(myMovie3, 0, 40, 960, 450);
 
 }
 if (visning == 4) {
   text ("4", width/2, height/2);
-      image(myMovie4, 0, 0, 960, 540);
+      image(myMovie4, 0, 40, 960, 450);
 
 }
 if (k1.knapOn) visning=1;
