@@ -15,20 +15,27 @@ class Knap {
 
 
   void tegn() {
-
+    //imageMode(CENTER);
+image(knap,knapX-10,knapY-30,110,100);
     //DEL AF KNAPPEN - tegning af knap
     textSize(25);
     if (knapOn) {
-      fill(200);
-      rect(knapX, knapY, knapB, knapH);
+     // fill(200);
+      //rect(knapX, knapY, knapB, knapH);
       fill(255);
       text(navn, knapX+10, knapY+30);
     } else {
-      fill(100);
-      rect(knapX, knapY, knapB, knapH);
-      fill(200);
+     // fill(100);
+      //rect(knapX, knapY, knapB, knapH);
+      fill(180);
       text(navn, knapX+10, knapY+30);
     }
+    
+     
+
+
+
+
   }
 
   void knapKlik() {

@@ -16,11 +16,12 @@ Movie myMovie4;
 
 
 PImage back;
-
+PImage knap;
 
 void setup() {
   size(960, 540);
   back = loadImage("back.png");
+  knap = loadImage("knap.png");
   k1 = new Knap(350, 100, "Cam 1");
   k2 = new Knap(500, 100, "Cam 2");
   k3 = new Knap(350, 200, "Cam 3");
@@ -57,27 +58,35 @@ void draw() {
   text("ALLE KAMERAER", 380, 300, width/1, height/1);
 
   fill(0, 408, 612, 816);
-  text("HomeSaFe", 420, 40);
+  text("HomeSaFe", 400, 40);
   }
 if (visning == 1) {
   text("1", width/2, height/2);
     image(myMovie1, 0, 40, 960, 450);
+    fill(0, 408, 612, 816);
+    text("HOVED RULLETRAPPEN", 350,40);
     
 
 }
 if (visning == 2) {
   text("2", width/2, height/2);
       image(myMovie2, 0, 40, 960, 450);
+      fill(0, 408, 612, 816);
+    text("BAGINDGANG RULLETRAPPEN", 300,40);
 
 }
 if (visning == 3) {
   text("3", width/2, height/2);
       image(myMovie3, 0, 40, 960, 450);
+      fill(0, 408, 612, 816);
+    text("HOVEDINDGANG", 375,40);
 
 }
 if (visning == 4) {
   text ("4", width/2, height/2);
       image(myMovie4, 0, 40, 960, 450);
+      fill(0, 408, 612, 816);
+    text("BUTIKKER", 380,40);
 
 }
 if (k1.knapOn) visning=1;
